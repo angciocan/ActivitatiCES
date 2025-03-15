@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Telefon{
     String marca = "";
 
@@ -50,9 +53,22 @@ class Telefon{
         return "Marca telefonului: " + this.marca + " rezolutia telefonului: " + this.rezolutie
                 + " capacitatea bateriei: " + this.capacitateBaterie + " durata bateriei in zile: " + this.durataBaterieInZile;
     }
+
+    public List<Telefon> telefoaneCuMarcaSamsung(List<Telefon> telefoane){
+        List<Telefon> telefoaneSamsung = new ArrayList<>();
+
+        for(Telefon telefon : telefoane){
+           if(telefon.getMarca() == "Samsung"){
+               telefoaneSamsung.add(telefon);
+           }
+        }
+
+        return telefoaneSamsung;
+    }
 }
 
 public class TelefonMain {
     public static void main(String[] args){
+
     }
 }
