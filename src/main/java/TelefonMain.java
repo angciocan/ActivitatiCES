@@ -58,7 +58,7 @@ class Telefon{
         List<Telefon> telefoaneSamsung = new ArrayList<>();
 
         for(Telefon telefon : telefoane){
-           if(telefon.getMarca() == "Samsung"){
+           if(telefon.getMarca().equals("Samsung")){
                telefoaneSamsung.add(telefon);
            }
         }
