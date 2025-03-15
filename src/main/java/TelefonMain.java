@@ -45,6 +45,11 @@ class Telefon{
     public void setDurataBaterieInZile(int durataBaterieInZile) {
         this.durataBaterieInZile = durataBaterieInZile;
     }
+
+    public String toString(){
+        return "Marca telefonului: " + this.marca + " rezolutia telefonului: " + this.rezolutie
+                + " capacitatea bateriei: " + this.capacitateBaterie + " durata bateriei in zile: " + this.durataBaterieInZile;
+    }
 }
 
 public class TelefonMain {
